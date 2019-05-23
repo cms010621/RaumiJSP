@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-showProc.jsp
+show - 교실 사진(360도)
 </body>
 </html>

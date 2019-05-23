@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 
 <jsp:forward page="template.jsp">
-	<jsp:param name="CONTENTPAGE" value="confirmProc.jsp" />
+	<jsp:param name="CONTENTPAGE" value="reserveProc.jsp" />
 
 
 </jsp:forward>
