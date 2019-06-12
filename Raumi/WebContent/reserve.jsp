@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"
+    import="java.io.*"
+	
+
+    %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -103,81 +107,75 @@
 			font-family: "Noto Sans KR", san-serif;
 			font-size:20px;
 		}
-		/* The Modal (background) */
-		.modal {
-    		display: none; /* Hidden by default */
-    		position: fixed; /* Stay in place */
-    		z-index: 1; /* Sit on top */
-    		left: 0;
-    		top: 0;
-    		width: 100%; /* Full width */
-    		height: 100%; /* Full height */
-    		overflow: auto; /* Enable scroll if needed */
-    		background-color: rgb(0,0,0); /* Fallback color */
-    		background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		.calender {
+			width:300px;
+			height:300px;
 		}
-		button {
-			width:150px;
-			height:40px;
-			border:2px solid #f53f55;
-			background-color: white;
-			border-radius: 27px;	
+		.td_head {
+			width:140px;
+			height:35px;
+			font-weight:bold;
+			padding-left:7px;
+			background-color:#F6F6F6;
+			border-top:solid 1px #ffffff;
+			border-right:solid 1px #ffffff; 
+			color:#4D4D4D;
 		}
-    
-		/* Modal Content/Box */
-		.modal-content {
-    		width:200px;
-    		height:800px;
-    		background-color: #fefefe;
-    		margin: 15% auto; /* 15% from the top and centered */
-    		padding: 20px;
-    		border: 1px solid #888;
-   			width: 50%; /* Could be more or less, depending on screen size */                        
+		.td_label {
+			padding-left:10px;
+			height:35px;
+			background-color:#FFFFFF;
+			padding-top:8px;
+			padding-bottom:8px;
+			line-height: 1.6em;
 		}
-		.modal-content>.p1 {
-    		font-size:25px;
-    		float:left;
-    		font-family: "Jua", sans-serif;
+		.td_head2 {
+			height:35px;
+			font-weight:bold;
+			padding-left:7px;
+			background-color:#F6F6F6;
+			border-top:solid 1px #ffffff;
+			border-right:solid 1px #ffffff; 
+			color:#4D4D4D;
 		}
-		.modal-content>.p2 {
-    		font-size:40px;
-    		font-family: "Jua", sans-serif;
-    		position:relative;
-    		right:70px;
+		.td_label2 {
+			padding-left:10px;
+			height:35px;
+			background-color:#FFFFFF;
+			padding-top:8px;
+			padding-bottom:8px;
+			line-height: 1.6em;
 		}
-		.modal-content>.cancel {
-    		width:200px;
+		.table {
+			background-color:D2D2D2;
+			width:1000px;
+		}
+		.reserveBtn {
+			width:200px;
     		height:70px;
     		font-size:20px;
+    		font-weight:bold;
     		color:#fefefe;
     		border:1px solid #f53f55;
-    		background-color: #f53f55;
+    		background-color:#f53f55;
     		border-radius:10px;
+    		margin:5px;
 		}
-		.modal-content>.ok {
-    		width:200px;
+		.checkBtn {
+			width:200px;
     		height:70px;
     		font-size:20px;
+    		font-weight:bold;
     		color:#fefefe;
     		border:1px solid #24224a;
     		background-color:#24224a;
-    		border-radius:10px;	
-		}
-		/* The Close Button */
- 		.close {
-    		color: #aaa;
-    		float: right;
-    		font-size: 28px;
-    		font-weight: bold;
-		}
-		.close:hover, .close:focus {
-    		color: black;
-    		text-decoration: none;
-    		cursor: pointer;
+    		border-radius:10px;
+    		margin:5px;	
 		}
 </style>
 </head>
 <body>
+<form action="check.jsp" method="post">
 <center>
 <header>
 	<a href="main.jsp"><img class="showlogo" src="img/raumi_logo.png"></a>
@@ -194,66 +192,107 @@
 <div class="big_show">RESERVE</div>
 <div class="explain">내가 찾던 전공실!<br>내가 필요한 전공실과 협업실을 예약!</div>
 <br><br>
-    <!-- Trigger/Open The Modal -->
-    <button id="myBtn">예약 내역 확인하기</button>
- 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
- 
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>                                                               
-        <p class="p1">예약 내역 확인</p>
-        <br><br>
-        <p class="p2">예약하신 내역을 다시한번 확인해주세요!</p>
-        <hr>
-        <div class="modal_body">
-        <div class="list" style="color: gray; font-size:20px; text-align:left;">예약공간</div>
-        <hr>
-        <div class="list" style="color: gray; font-size:20px; text-align:left;">예약날짜</div>
-        <hr>
-        <div class="list" style="color: gray; font-size:20px; text-align:left;">예약시간</div>
-        <hr>
-        <div class="list" style="color: gray; font-size:20px; text-align:left;">예약인원</div>
-        <hr>
-        <div class="list" style="color: gray; font-size:20px; text-align:left;">기타</div>
-        <hr>
-        </div>
-        <input class="cancel" type="button" value="예악수정">
-        <input class="ok" type="button" value="예약확인">
-        
-      </div>
- 
-    </div>
+<img class="calender" src="img/calender.jpg">
+<p>대략 캘린더 넣는곳 불가능이면 리스트바</p>
+<hr>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p>대략 중단이라 칩시다 여기는 교실선택과 시간선택이 들어가욤</p>
+<hr>
+<br><br>
+<table cellpadding="1" cellspacing="1" class="table" style="margin-top:5px;">
+		<td class="td_head">예약자이름</td>
+		<td class="td_label">
+			<input type="text" name="wr_tel" value="" itemname="예약자이름" />
+		</td>
+	</tr>
+	<tr>
+		<td class="td_head">이메일 </td>
+		<td class="td_label">
+			<input type="text" name="wr_mail" value="" itemname="이메일" style="width:300px;" />
+		</td>
+	</tr>
+</table>
+<br><br><br><br><br>
 
-</center>
-</body>
-<script>
-// Get the modal
-var modal = document.getElementById('myModal');
+<a href="check.jsp"><input class="checkBtn" type="submit" value="예약 확인"></a>
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];                                          
+<%
+/*
 
-// When the user clicks on the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
+String fileName = "test.txt"; //생성할 파일명
+String fileDir = "55"; //파일을 생성할 디렉토리
+String filePath = "C:/exchange/data/123/" + fileDir + "/"; //파일을 생성할 전체경로
+
+File fPath = new File(filePath); //경로생성
+
+if ( !fPath.exists() ) {
+ fPath.mkdirs(); //상위 디렉토리가 존재하지 않으면 상위디렉토리부터 생성.
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
+filePath += fileName; //생성할 파일명을 전체경로에 결합
+
+try {
+
+ File f = new File(filePath); // 파일객체생성
+ f.createNewFile(); //파일생성
+
+ // 파일쓰기
+ FileWriter fw = new FileWriter(filePath); //파일쓰기객체생성
+ String data = "파일에다 아무거나 적습니다.\n이거는 두번째 줄인데 아무거나 적습니다";
+ fw.write(data); //파일에다 작성
+ fw.close(); //파일핸들 닫기
+/* 다른 방벙으로 파일 쓰기
+BufferedWriter wt=new BufferedWriter(new FileWriter(filePath)) ;
+wt.write("test");
+wt.close();
+*/
+/*
+ // 파일읽기
+ FileReader fr = new FileReader(filePath); //파일읽기객체생성
+ BufferedReader br = new BufferedReader(fr); //버퍼리더객체생성
+
+ String line = null; 
+ while((line=br.readLine())!=null) { //라인단위 읽기
+  out.println(line + "<br>"); 
+ }
+
+} catch (IOException e) { 
+ System.out.println(e.toString()); //에러 발생시 메시지 출력
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+*/
+%>
+
+
+
+<%/*
+String message = "This is a sample message.\n";
+
+File file = new File("test1.txt");
+FileWriter writer = null;
+
+try {
+    // 기존 파일의 내용에 이어서 쓰려면 true를, 기존 내용을 없애고 새로 쓰려면 false를 지정한다.
+    writer = new FileWriter(file, true);
+    writer.write(message);
+    writer.flush();
+    
+    System.out.println("DONE");
+} catch(IOException e) {
+    e.printStackTrace();
+} finally {
+    try {
+        if(writer != null) writer.close();
+    } catch(IOException e) {
+        e.printStackTrace();
     }
 }
 
-</script>
+
+*/
+%>
+</center>
+</form>
+</body>
 </html>
