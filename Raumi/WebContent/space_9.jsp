@@ -38,27 +38,27 @@
     		top:130px;
     		left:730px;
 		}
-    	a {
-        	color: #1e2b4d;
-    	}
-    	a:link {
-       		text-decoration: none;
-    	}
-    	a:hover {
-        	color:#f53f55;
-    	}
-    	.show:hover {
-        	color: #F53F55;
-    	}
-    	.reserve:hover {
-        	color: #F53F55;
-    	}
-    	.check:hover {
-        	color: #F53F55;
-    	}
-    	.board:hover {
-        	color: #F53F55;
-    	}
+		a {
+    		color: #1e2b4d;
+		}
+		a:link {
+    		text-decoration: none;
+		}
+		a:hover {
+    		color:#f53f55;
+		}
+		.show:hover {
+    		color: #F53F55;
+		}
+		.reserve:hover {
+    		color: #F53F55;
+		}
+		.check:hover {
+    		color: #F53F55;
+		}
+		.board:hover {
+    		color: #F53F55;
+		}
 		section {
 			width:350px;
 			height:2170px;
@@ -86,20 +86,11 @@
 		.big_show {
     		position: relative;
     		font-size: 38px;
-    		font-family: "Noto Sans KR", san-serif;
 		}
 		.explain {
 			font-family: "Noto Sans KR", san-serif;
-			font-size: 20px;
+			font-size:20px;
 		}
-		.button {
-        	background-color: #f53f55;
-        	width: 270px;
-        	height: 270px;
-        	margin: 10px;
-        	padding: 10px;
-        	color: #f53f55;
-    	}
 </style>
 </head>
 <body>
@@ -114,34 +105,5 @@
 </header>
 <section></section>
 <aside></aside>
-<div class="circle"></div>
-<div class="big_show">SHOW</div>
-<div class="explain">이곳이 제게 필요한 실습실인가요?<br>실습실 전경과 환경</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<table>
-	<tr>
-		<td><a href="space_1.jsp"><input type="button" class="button"></a></td>
-		<td><a href="space_2.jsp"><input type="button" class="button"></a></td>
-		<td><a href="space_3.jsp"><input type="button" class="button"></a></td>
-	</tr>
-	<tr>
-		<td><a href="space_4.jsp"><input type="button" class="button"></a></td>
-		<td><a href="space_5.jsp"><input type="button" class="button"></a></td>
-		<td><a href="space_6.jsp"><input type="button" class="button"></a></td>
-	</tr>
-		<tr>
-		<td><a href="space_7.jsp"><input type="button" class="button"></a></td>
-		<td><a href="space_8.jsp"><input type="button" class="button"></a></td>
-		<td><a href="space_9.jsp"><input type="button" class="button"></a></td>
-	</tr>
-</table>
-</center>
 </body>
 </html>

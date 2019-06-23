@@ -17,37 +17,21 @@ body, html {
 	background-color: #fafafa;
 	margin: 0;
 }
-
 header {
 	width: 1920px;
 	height: 300px;
 }
-
 .showlogo {
-	width: 100px;
-	height: 138px;
+	width:126px;
+	height:158px;
 	position: relative;
 	top: 50px;
 	right: 610px;
 }
-
-.raumi {
-	font-family: "Noto Sans KR", san-serif;
-	font-size: 36px;
-	font-weight: bold;
-	font-style: normal;
-	text-align: center;
-	float: left;
-	color: #1e2b4d;
-	position: relative;
-	top: 170px;
-	left: 530px;
-}
-
 .show, .reserve, .check, .board { /*상단메뉴*/
 	width: 52px;
 	height: 14px;
-	margin: 10px;
+	margin: 20px;
 	padding: 10px;
 	font-family: "Noto Sans KR", san-serif;
 	font-size: 20px;
@@ -56,37 +40,29 @@ header {
 	color: #1e2b4d;
 	position: relative;
 	top: 130px;
-	left: 660px;
+	left: 730px;
 }
-
 a {
 	color: #1e2b4d;
 }
-
 a:link {
 	text-decoration: none;
 }
-
 a:hover {
 	color: #f53f55;
 }
-
 .show:hover {
 	color: #F53F55;
 }
-
 .reserve:hover {
 	color: #F53F55;
 }
-
 .check:hover {
 	color: #F53F55;
 }
-
 .board:hover {
 	color: #F53F55;
 }
-
 section {
 	width: 350px;
 	height: 1600px;
@@ -95,7 +71,6 @@ section {
 	background-color: #24224a;
 	float: left;
 }
-
 aside {
 	width: 350px;
 	height: 1600px;
@@ -104,7 +79,6 @@ aside {
 	background-color: #24224a;
 	float: right;
 }
-
 .circle {
 	background-color: #f53f55;
 	border-radius: 100px;
@@ -113,25 +87,21 @@ aside {
 	margin: 5px;
 	padding: 1px;
 }
-
 .big_show {
 	position: relative;
 	font-size: 38px;
 }
-
 .explain {
 	position: relative;
 	font-size: 20px;
 	font-family: "Noto Sans KR", san-serif;
 }
-
 .check_1 {
 	width: 860px;
 	height: 1150px;
 	border-radius: 50px;
 	background-color: #24224a;
 }
-
 .check_2 {
 	width: 700px;
 	height: 1000px;
@@ -139,7 +109,6 @@ aside {
 	bottom: 100px;
 	background-image:url("img/note.jpg");
 }
-
 .check_2>.cancel {
 	width: 200px;
 	height: 70px;
@@ -151,14 +120,12 @@ aside {
 	position: relative;
 	top: 400px;
 }
-
 .check_2>.p1 {
 	font-size: 25px;
 	float: left;
 	font-family: "Jua", sans-serif;
 	margin: 30px;
 }
-
 .check_2>.p2 {
 	font-size: 40px;
 	font-family: "Jua", sans-serif;
@@ -166,7 +133,6 @@ aside {
 	text-align: center;
 	right: 95px;
 }
-
 .notes {
 	background-attachment: local;
 	background-image: linear-gradient(to right, white 10px, transparent 10px),
@@ -177,7 +143,6 @@ aside {
 	padding: 8px 10px;
 	font-size:30px;
 	text-align:left;
-
 	
 }
 </style>
@@ -185,9 +150,7 @@ aside {
 <body>
 	<center>
 		<header>
-			<a href="main.jsp"><img class="showlogo" src="img/raumi_logo.png"></a>
-			<div class="raumi">
-				<a href="main.jsp">Raumi</a>
+			<a href="main.jsp"><img class="showlogo" src="img/raumi_main_logo.png"></a>
 			</div>
 			<div class="show">
 				<a href="show.jsp">SHOW</a>

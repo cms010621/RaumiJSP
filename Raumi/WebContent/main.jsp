@@ -8,8 +8,8 @@
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap&subset=korean" rel="stylesheet">
 <style>
 		body, html { /*전체화면 해상도 1920*1080*/
-			width:1920px;
-			height:2170px;
+			width:1100px;
+			height:1970px;
 			background-color: #fafafa;
 			margin:0;
 		}
@@ -25,27 +25,16 @@
             background-color: white;
             float: right;
             position:relative;
-            right:20px;
+            top:30px;
+            left:500px;
             font-size:20px;
             font-family:"Noto Sans KR", san-serif;
         }
+        
         .logo {
             position:relative;
-            top:0px;
-            left:90px;
-        }
-        .Raumi {
-            width: 109px;
-            height: 29px;
-            font-family: "Noto Sans KR", san-serif;
-            font-size: 36px;
-            font-weight: bold;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-align: center;
-            color: #1e2b4d;
+            top:30px;
+            left:520px;
         }
         .menuline {
             position: relative;
@@ -78,6 +67,9 @@
         a:hover {
             color:#f53f55;
         }
+        img {
+        	display:block;
+        }
         .img1 {/*벚꽃사진 제이쿼리 이용*/
             width: 1920px;
             height: 800px;
@@ -85,15 +77,16 @@
             padding:0;
         }
         .img2 {
-            width: 1920px;;
+            width: 1920px;
             height: 695px;
             margin:0;
             padding:0;
         }
         footer {
             width:1920px;
-            height:200px;
+            height:100px;
             background-color:#fafafa;
+            font-size:17px;
         }
 </style>
 </head>
@@ -101,8 +94,7 @@
         <center>
             <header>      
             <input class="loginbtn" type="button" value="LOGIN"><br>
-            <img class="logo" src="img/raumi_logo.png">
-             <div class="Raumi">Raumi</div>
+            <img class="logo" src="img/raumi_main_logo.png">
             </header>
             <br>
             <div class="menuline">
@@ -114,9 +106,11 @@
             </div>
             <br>
             <img class="img1" src="img/sakura.jpg">
-            <img class="img2" src="img/intro.PNG">
+            <img class="img2" src="img/about_raumi.png">
         <footer>
-            footer
+            <p>
+            (08821) 서울시 관악구 호암로 546(신림동) | 미림여자정보과학고등학교<br>
+            Copyright 2019. Yeonju Seong, Seha Lee, Minsung Choi, Yoonji Kim. All right reserved.</p>
         </footer>
     </center>
 </body>

@@ -18,28 +18,16 @@ header {
 	height:300px;
 }
 .showlogo {
-	width:100px;
-	height:138px;
+	width:126px;
+	height:158px;
 	position:relative;
 	top:50px;
 	right:610px;
 }
-.raumi {
-	font-family: "Noto Sans KR", san-serif;
-    font-size: 36px;
-    font-weight: bold;
-    font-style: normal;
-    text-align: center;
-    float:left;
-    color: #1e2b4d;
-    position:relative;
-    top:170px;
-    left:530px;
-}
 .show, .reserve, .check, .board { /*상단메뉴*/
     width: 52px;
     height: 14px;
-    margin: 10px;
+    margin: 20px;
     padding: 10px;
 	font-family: "Noto Sans KR", san-serif;
     font-size: 20px;
@@ -48,7 +36,7 @@ header {
     color: #1e2b4d;
     position:relative;
     top:130px;
-    left:660px;
+    left:730px;
 }
     a {
         color: #1e2b4d;
@@ -109,8 +97,7 @@ aside {
 <body>
 <center>
 <header>
-	<a href="main.jsp"><img class="showlogo" src="img/raumi_logo.png"></a>
-	<div class="raumi"><a href="main.jsp">Raumi</a></div>
+	<a href="main.jsp"><img class="showlogo" src="img/raumi_main_logo.png"></a>
 	<div class="show"><a href="show.jsp">SHOW</a></div>
     <div class="reserve"><a href="reserve.jsp">&nbsp;&nbsp;&nbsp;RESERVE</a></div>
     <div class="check"><a href="check.jsp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHECK</a></div>
