@@ -94,7 +94,7 @@
         <center>
             <header>      
             <input class="loginbtn" type="button" value="LOGIN"><br>
-            <img class="logo" src="img/raumi_main_logo.png">
+            <img class="logo" src="img/raumi_logo.png">
             </header>
             <br>
             <div class="menuline">
