@@ -148,7 +148,7 @@ aside {
 	padding: 10px;
 	opacity: 0;
 	transition: .5s ease;
-	background-color: #008CBA;
+	background-color: #f53f55;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -162,7 +162,7 @@ aside {
 	color: white;
 	font-size: 20px;
 	position: absolute;
-	top: 52%;
+	top: 65%;
 	left: 50%;
 	width: 250px;
 	height: 250px;
@@ -209,84 +209,85 @@ aside {
 			<tr>
 				<td><a href="space_1.jsp">
 						<div class="container">
-							<img src="img/meta.jpg" alt="Avatar" class="image">
+							<img src="img/solu1_1.png" alt="Avatar" class="image">
 							<div class="overlay">
-								<div class="text">뉴미디어 솔루션 1실</div>
+								<div class="text">뉴미디어 웹솔루션<br>실습실 01<br><text style="font-size:15px; border;">New Media WebSolution 01</text></div>
 							</div>
 						</div>
 				</a></td>
 				<td><a href="space_2.jsp">
 						<div class="container">
-							<img src="img/meta.jpg" alt="Avatar" class="image">
+							<img src="img/solu2.png" alt="Avatar" class="image">
 							<div class="overlay">
-								<div class="text">뉴미디어 솔루션 2실</div>
+								<div class="text">뉴미디어 웹솔루션<br>실습실 02<br><text style="font-size:15px; border;">New Media WebSolution 02</text></div>
 							</div>
 						</div>
 				</a></td>
 				<td><a href="space_3.jsp"><div class="container">
-							<img src="img/meta.jpg" alt="Avatar" class="image">
+							<img src="img/solu3.png" alt="Avatar" class="image">
 							<div class="overlay">
-								<div class="text">뉴미디어 솔루션 3실</div>
+								<div class="text">뉴미디어 웹솔루션<br>실습실 03<br><text style="font-size:15px; border;">New Media WebSolution 03</text></div>
 							</div>
 						</div></a></td>
 			</tr>
 			<tr>
 				<td><a href="space_4.jsp"><div class="container">
-							<img src="img/meta.jpg" alt="Avatar" class="image">
+							<img src="img/sof1.png" alt="Avatar" class="image">
 							<div class="overlay">
-								<div class="text">뉴미디어 인터렉티브 미디어 1실</div>
+								<div class="text">뉴미디어 소프트웨어<br>실습실 01<br><text style="font-size:15px; border;">New Media Software 01</text></div>
 							</div>
 						</div></a></td>
 				<td><a href="space_5.jsp"><div class="container">
-							<img src="img/meta.jpg" alt="Avatar" class="image">
+							<img src="img/sof2.png" alt="Avatar" class="image">
 							<div class="overlay">
-								<div class="text">뉴미디어 인터렉티브 미디어 1실</div>
+								<div class="text">뉴미디어 소프트웨어<br>실습실 02<br><text style="font-size:15px; border;">New Media Software 02</text></div>
 							</div>
 						</div></a></td>
 				<td><a href="space_6.jsp"><div class="container">
 							<img src="img/meta.jpg" alt="Avatar" class="image">
 							<div class="overlay">
-								<div class="text">코워킹 스페이스 1실</div>
+								<div class="text">코워킹 스페이스<br><br><text style="font-size:15px; border;">CoWorking Space</text></div>
 							</div>
 						</div></a></td>
 			</tr>
 			<tr>
 				<td><a href="space_7.jsp"><div class="container">
-							<img src="img/meta.jpg" alt="Avatar" class="image">
+							<img src="img/bogun.png" alt="Avatar" class="image">
 							<div class="overlay">
-								<div class="text">코워킹 스페이스 2실</div>
+								<div class="text">보건교육실<br><br><text style="font-size:15px; border;">Health Education Room</text></div>
 							</div>
 						</div></a></td>
 				<td><a href="space_8.jsp"><div class="container">
-							<img src="img/meta.jpg" alt="Avatar" class="image">
+							<img src="img/sang1.png" alt="Avatar" class="image">
 							<div class="overlay">
-								<div class="text">코워킹 스페이스 3실</div>
+								<div class="text">상상카페<br><br><text style="font-size:15px; border;">SangSang Cafe</text></div>
 							</div>
 						</div></a></td>
 				<td><a href="space_9.jsp"><div class="container">
-							<img src="img/meta.jpg" alt="Avatar" class="image">
+							<img src="img/con1.png" alt="Avatar" class="image">
 							<div class="overlay">
-								<div class="text">코워킹 스페이스 4실</div>
+								<div class="text">스마트문화앱콘텐츠<br>제작 실습실<br><text style="font-size:15px; border;">Smart Culture App Content 
+Production Lab</text></div>
 							</div>
 						</div></a></td>
 			</tr>
 			<tr>
 			<td><a href="space_10.jsp"><div class="container">
-							<img src="img/meta.jpg" alt="Avatar" class="image">
+							<img src="img/sujun1.png" alt="Avatar" class="image">
 							<div class="overlay">
-								<div class="text">상상카페 1실</div>
+								<div class="text">수준별교실 1실<br><br><text style="font-size:15px; border;">Leveled Classroom 01</text></div>
 							</div>
 						</div></a></td>
 				<td><a href="space_11.jsp"><div class="container">
-							<img src="img/meta.jpg" alt="Avatar" class="image">
+							<img src="img/sujun2.png" alt="Avatar" class="image">
 							<div class="overlay">
-								<div class="text">상상카페 2실</div>
+								<div class="text">수준별교실 2실<br><br><text style="font-size:15px; border;">Leveled Classroom 02</text></div>
 							</div>
 						</div></a></td>
 				<td><a href="space_12.jsp"><div class="container">
 							<img src="img/meta.jpg" alt="Avatar" class="image">
 							<div class="overlay">
-								<div class="text">상상카페 3실</div>
+								<div class="text">못찍은 실습실이나 영어카페<br><br><text style="font-size:15px; border;">English Cafe(not)</text></div>
 							</div>
 						</div></a></td>
 			</tr>
