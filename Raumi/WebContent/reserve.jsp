@@ -208,6 +208,30 @@
     		border-radius:10px;
     		margin:5px;	
 		}
+		
+		.date-container, td {
+		border:#000 12px solid;
+		border-collapse:collapse;
+		}
+		
+		.date-container {
+		width: 879px;
+		height: 174px;
+		}
+		
+		.btn2 {
+		width:146px;
+		height:146px;
+		background-color: #fafafa;
+		color: #000;
+    	border: none;
+    	padding: 15px;
+    	text-align: center;
+    	text-decoration: none;
+    	display: inline-block;
+    	font-size: 30px;
+    	cursor: pointer;
+		}
     	
 </style>
 </head>
@@ -228,6 +252,20 @@
 		<div class="explain">내가 찾던 전공실!<br>내가 필요한 전공실과 협업실을 예약!</div>
 		<br><br>
 		<!-- 날짜 선택 -->
+			<div class="text">1.예약할 날짜를 먼저 선택해주세요.</div>
+			<br>
+			<div class="slideshow-container">
+			
+				<table class="date-container">
+				 <tr>
+				  <td><button class="btn2">오늘</button></td>
+				  <td><button class="btn2">+1</button></td>
+				  <td><button class="btn2">+1</button></td>
+				  <td><button class="btn2">+1</button></td>
+				  <td><button class="btn2">+1</button></td>
+				 </tr>
+				</table>
+			</div>
 		<!-- 전공실 선택 -->
 		<br><br>
 		<!-- 시간 선택 -->
