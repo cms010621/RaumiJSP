@@ -238,12 +238,11 @@
 		<body>
 		<center>
 		<header>
-			<a href="main.jsp"><img class="showlogo" src="img/raumi_logo.png"></a>
+			<a href="main.jsp"><img class="showlogo" src="img/raumi_main_logo.png"></a>
 			<div class="show"><a href="show.jsp">SHOW</a></div>
 		    <div class="reserve"><a href="reserve.jsp">&nbsp;&nbsp;&nbsp;RESERVE</a></div>
 		    <div class="check"><a href="check.jsp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHECK</a></div>
-		    <div class="board"><a href="board.jsp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BOARD
-		    </a></div><br>
+<br>
 		</header>
 		<section></section>
 		<aside></aside>

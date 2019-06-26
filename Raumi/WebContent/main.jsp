@@ -41,7 +41,7 @@
             left:750px;
             bottom:10px;
         }
-        .show, .reserve, .check, .board { /*상단메뉴*/
+        .show, .reserve, .check { /*상단메뉴*/
             width: 52px;
             height: 14px;
             margin:10px;
@@ -94,15 +94,14 @@
         <center>
             <header>      
             <input class="loginbtn" type="button" value="LOGIN"><br>
-            <img class="logo" src="img/raumi_logo.png">
+            <img class="logo" src="img/raumi_main_logo.png">
             </header>
             <br>
             <div class="menuline">
 			<div class="show"><a href="show.jsp">SHOW</a></div>
     		<div class="reserve"><a href="reserve.jsp">&nbsp;&nbsp;&nbsp;RESERVE</a></div>
     		<div class="check"><a href="check.jsp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHECK</a></div>
-    		<div class="board"><a href="board.jsp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BOARD
-    		</a></div><br>
+    		<br>
             </div>
             <br>
             <img class="img1" src="img/sakura.jpg">

@@ -180,7 +180,7 @@ aside {
 <body>
 	<center>
 		<header>
-			<a href="main.jsp"><img class="showlogo" src="img/raumi_logo.png"></a>
+			<a href="main.jsp"><img class="showlogo" src="img/raumi_main_logo.png"></a>
 			<div class="show">
 				<a href="show.jsp">SHOW</a>
 			</div>
@@ -189,10 +189,6 @@ aside {
 			</div>
 			<div class="check">
 				<a href="check.jsp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHECK</a>
-			</div>
-			<div class="board">
-				<a href="board.jsp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BOARD
-				</a>
 			</div>
 			<br>
 		</header>
@@ -207,24 +203,24 @@ aside {
 		<br>
 		<table>
 			<tr>
-				<td><a href="space_1.jsp">
+				<td><a href="space_6.jsp">
 						<div class="container">
-							<img src="img/solu1_1.png" alt="Avatar" class="image">
+							<img src="img/뉴미디어 웹솔루션 1실/뉴미디어 웹솔루션 1실.jpg" alt="Avatar" class="image">
 							<div class="overlay">
 								<div class="text">뉴미디어 웹솔루션<br>실습실 01<br><text style="font-size:15px; border;">New Media WebSolution 01</text><br><br>3층 </div>
 							</div>
 						</div>
 				</a></td>
-				<td><a href="space_2.jsp">
+				<td><a href="space_7.jsp">
 						<div class="container">
-							<img src="img/solu2.png" alt="Avatar" class="image">
+							<img src="img/뉴미디어 웹솔루션 2실/뉴미디어 웹솔루션 2실.jpg" alt="Avatar" class="image">
 							<div class="overlay">
 								<div class="text">뉴미디어 웹솔루션<br>실습실 02<br><text style="font-size:15px; border;">New Media WebSolution 02</text><br><br>3층</div>
 							</div>
 						</div>
 				</a></td>
-				<td><a href="space_3.jsp"><div class="container">
-							<img src="img/solu3.png" alt="Avatar" class="image">
+				<td><a href="space_8.jsp"><div class="container">
+							<img src="img/뉴미디어 웹솔루션 3실/뉴미디어 웹솔루션 3실.jpg" alt="Avatar" class="image">
 							<div class="overlay">
 								<div class="text">뉴미디어 웹솔루션<br>실습실 03<br><text style="font-size:15px; border;">New Media WebSolution 03</text><br><br>3층</div>
 							</div>
@@ -232,39 +228,39 @@ aside {
 			</tr>
 			<tr>
 				<td><a href="space_4.jsp"><div class="container">
-							<img src="img/sof1.png" alt="Avatar" class="image">
+							<img src="img/뉴미디어 소프트웨어 1실/뉴미디어 소프트웨어 1실.jpg" alt="Avatar" class="image">
 							<div class="overlay">
 								<div class="text">뉴미디어 소프트웨어<br>실습실 01<br><text style="font-size:15px; border;">New Media Software 01</text><br><br>3층</div>
 							</div>
 						</div></a></td>
 				<td><a href="space_5.jsp"><div class="container">
-							<img src="img/sof2.png" alt="Avatar" class="image">
+							<img src="img/뉴미디어 소프트웨어 2실/뉴미디어 소프트웨어 2실.jpg" alt="Avatar" class="image">
 							<div class="overlay">
 								<div class="text">뉴미디어 소프트웨어<br>실습실 02<br><text style="font-size:15px; border;">New Media Software 02</text><br><br>3층</div>
 							</div>
 						</div></a></td>
-				<td><a href="space_6.jsp"><div class="container">
-							<img src="img/meta.jpg" alt="Avatar" class="image">
+				<td><a href="space_11.jsp"><div class="container">
+							<img src="img/4층 끝/room.jpg" alt="Avatar" class="image">
 							<div class="overlay">
-								<div class="text">코워킹 스페이스<br><br><text style="font-size:15px; border;">CoWorking Space</text><br><br>2층</div>
+								<div class="text">뉴미디어 디자인<br>실습실 01<br><text style="font-size:15px; border;">New Media Design 01</text><br><br>4층</div>
 							</div>
 						</div></a></td>
 			</tr>
 			<tr>
-				<td><a href="space_7.jsp"><div class="container">
-							<img src="img/bogun.png" alt="Avatar" class="image">
+				<td><a href="space_3.jsp"><div class="container">
+							<img src="img/진로체험 교실/진로체험 교실.jpg" alt="Avatar" class="image">
 							<div class="overlay">
 								<div class="text">보건교육실<br><br><text style="font-size:15px; border;">Health Education Room</text><br><br>2층</div>
 							</div>
 						</div></a></td>
-				<td><a href="space_8.jsp"><div class="container">
-							<img src="img/sang1.png" alt="Avatar" class="image">
+				<td><a href="space_9.jsp"><div class="container">
+							<img src="img/무한상상카페/무한상상카페.jpg" alt="Avatar" class="image">
 							<div class="overlay">
-								<div class="text">상상카페<br><br><text style="font-size:15px; border;">SangSang Cafe</text><br><br>4층</div>
+								<div class="text">무한상상카페<br><br><text style="font-size:15px; border;">SangSang Cafe</text><br><br>4층</div>
 							</div>
 						</div></a></td>
-				<td><a href="space_9.jsp"><div class="container">
-							<img src="img/con1.png" alt="Avatar" class="image">
+				<td><a href="space_10.jsp"><div class="container">
+							<img src="img/스마트문화앱콘텐츠제작 1실/스마트문화앱 콘텐츠제작 실습실1.jpg" alt="Avatar" class="image">
 							<div class="overlay">
 								<div class="text">스마트문화앱콘텐츠<br>제작 실습실<br><text style="font-size:15px; border;">Smart Culture App Content 
 Production Lab</text><br><br>4층</div>
@@ -272,22 +268,16 @@ Production Lab</text><br><br>4층</div>
 						</div></a></td>
 			</tr>
 			<tr>
-			<td><a href="space_10.jsp"><div class="container">
-							<img src="img/sujun1.png" alt="Avatar" class="image">
+			<td><a href="space_1.jsp"><div class="container">
+							<img src="img/수준별 1실/수준별1실.jpg" alt="Avatar" class="image">
 							<div class="overlay">
-								<div class="text">수준별교실 1실<br><br><text style="font-size:15px; border;">Leveled Classroom 01</text><br><br>2층</div>
+								<div class="text">수준별 1실<br><br><text style="font-size:15px; border;">Leveled Classroom 01</text><br><br>2층</div>
 							</div>
 						</div></a></td>
-				<td><a href="space_11.jsp"><div class="container">
-							<img src="img/sujun2.png" alt="Avatar" class="image">
+				<td><a href="space_2.jsp"><div class="container">
+							<img src="img/수준별 2실/수준별2실.jpg" alt="Avatar" class="image">
 							<div class="overlay">
-								<div class="text">수준별교실 2실<br><br><text style="font-size:15px; border;">Leveled Classroom 02</text><br><br>2층</div>
-							</div>
-						</div></a></td>
-				<td><a href="space_12.jsp"><div class="container">
-							<img src="img/meta.jpg" alt="Avatar" class="image">
-							<div class="overlay">
-								<div class="text">못찍은 실습실이나 영어카페<br><br><text style="font-size:15px; border;">English Cafe(not)</text><br><br>3층</div>
+								<div class="text">수준별 2실<br><br><text style="font-size:15px; border;">Leveled Classroom 02</text><br><br>2층</div>
 							</div>
 						</div></a></td>
 			</tr>

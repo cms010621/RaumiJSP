@@ -24,10 +24,10 @@
 			top:50px;
 			right:610px;
 		}
-		.show, .reserve, .check, .board { /*상단메뉴*/
+		.show, .reserve, .check { /*상단메뉴*/
     		width: 52px;
     		height: 14px;
-    		margin: 20px;
+    		margin: 40px;
     		padding: 10px;
 			font-family: "Noto Sans KR", san-serif;
     		font-size: 20px;
@@ -75,35 +75,87 @@
 			background-color: #24224a;
 			float:right;
 		}
-		.circle {
-			background-color: #f53f55;
-			border-radius: 100px;
-			width:110px;
-			height:110px;
-			margin: 5px;
-			padding: 1px;
-		}
-		.big_show {
-    		position: relative;
-    		font-size: 38px;
-		}
-		.explain {
+		.spaceName {
 			font-family: "Noto Sans KR", san-serif;
-			font-size:20px;
+			font-size:50px;
+			font-weight:bold;
+			position:relative;
+			top:200px;
+			right:260px;
 		}
+		.spaceIMG {
+			width:400px;
+			height:400px;
+			position:relative;
+			top:230px;
+			right:290px;
+		}
+		.facility {
+			width:400px;
+			height:550px;
+			border:5px solid #64cae1;
+			position:relative;
+			bottom:178px;
+			left:200px;
+		}
+		.use {
+			font-family: "Noto Sans KR", san-serif;
+			font-size:30px;
+			font-weight:bold;
+		}
+		.use1, .use2, .use3, .use4, .use5 {
+			width:74px;
+			height:74px;
+			margin:32px;
+		}
+		.GoReserve {
+			width:150px;
+    		height:40px;
+    		font-size:20px;
+    		font-weight:bold;
+    		font-family:"Noto Sasn KR", san-serif;
+    		color:#fefefe;
+    		border:1px solid #f53f55;
+    		background-color:#f53f55;
+    		border-radius:10px;
+    		cursor:pointer;
+		}
+		
 </style>
 </head>
 <body>
 <center>
 <header>
-	<a href="main.jsp"><img class="showlogo" src="img/raumi_logo.png"></a>
+	<a href="main.jsp"><img class="showlogo" src="img/raumi_main_logo.png"></a>
 	<div class="show"><a href="show.jsp">SHOW</a></div>
     <div class="reserve"><a href="reserve.jsp">&nbsp;&nbsp;&nbsp;RESERVE</a></div>
     <div class="check"><a href="check.jsp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHECK</a></div>
-    <div class="board"><a href="board.jsp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BOARD
-    </a></div><br>
+<br>
 </header>
 <section></section>
 <aside></aside>
+<div>
+<div class="spaceName">뉴미디어 웹솔루션 1실</div>
+<img class="spaceIMG" src="img/뉴미디어 웹솔루션 1실/뉴미디어 웹솔루션 1실.jpg">
+<div class="facility">
+	<div class="use">편의 시설</div>
+	<table>
+	<tr>
+		<td><img class="use1" src="img/wifi.png"></td>
+		<td><img class="use2" src="img/desk.png"></td>
+	</tr>
+	<tr>
+		<td><img class="use3" src="img/blackboard.png"></td>
+		<td><img class="use4" src="img/screen.png"></td>
+	</tr>
+	<tr>
+		<td><img class="use5" src="img/power-strip.png"></td>
+	</tr>
+	</table>
+	<a href="reserve.jsp"><input class="GoReserve" type="button" value="바로 예약하기"></a>
+</div>
+<iframe src=""></iframe>
+</div>
+</center>
 </body>
 </html>

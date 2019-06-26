@@ -150,7 +150,7 @@ aside {
 <body>
 	<center>
 		<header>
-			<a href="main.jsp"><img class="showlogo" src="img/raumi_logo.png"></a>
+			<a href="main.jsp"><img class="showlogo" src="img/raumi_main_logo.png"></a>
 			</div>
 			<div class="show">
 				<a href="show.jsp">SHOW</a>
@@ -160,10 +160,6 @@ aside {
 			</div>
 			<div class="check">
 				<a href="check.jsp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHECK</a>
-			</div>
-			<div class="board">
-				<a href="board.jsp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BOARD
-				</a>
 			</div>
 			<br>
 		</header>
