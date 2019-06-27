@@ -22,9 +22,9 @@
 			height:158px;
 			position:relative;
 			top:50px;
-			right:610px;
+			right:700px;
 		}
-		.show, .reserve, .check { /*상단메뉴*/
+		.show, .view, .reserve, .check { /*상단메뉴*/
     		width: 52px;
     		height: 14px;
     		margin: 40px;
@@ -36,7 +36,7 @@
     		color: #1e2b4d;
     		position:relative;
     		top:130px;
-    		left:730px;
+    		left:685px;
 		}
 		a {
     		color: #1e2b4d;
@@ -128,8 +128,9 @@
 <header>
 	<a href="main.jsp"><img class="showlogo" src="img/raumi_main_logo.png"></a>
 	<div class="show"><a href="show.jsp">SHOW</a></div>
-    <div class="reserve"><a href="reserve.jsp">&nbsp;&nbsp;&nbsp;RESERVE</a></div>
-    <div class="check"><a href="check.jsp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHECK</a></div>
+	<div class="view"><a href="show_360.jsp">VIEW</a></div>
+    <div class="reserve"><a href="reserve.jsp">RESERVE</a></div>
+    <div class="check"><a href="check.jsp">CHECK</a></div>
 <br>
 </header>
 <section></section>
@@ -154,7 +155,6 @@
 	</table>
 	<a href="reserve.jsp"><input class="GoReserve" type="button" value="바로 예약하기"></a>
 </div>
-<iframe src=""></iframe>
 </div>
 </center>
 </body>

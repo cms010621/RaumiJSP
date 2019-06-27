@@ -29,22 +29,26 @@
             left:500px;
             font-size:20px;
             font-family:"Noto Sans KR", san-serif;
+            cursor:pointer;
+        }
+        .loginA {
+        	cursor:pointer;
         }
         
         .logo {
             position:relative;
             top:30px;
-            left:520px;
+            left:510px;
         }
         .menuline {
             position: relative;
             left:750px;
             bottom:10px;
         }
-        .show, .reserve, .check { /*상단메뉴*/
+        .show, .reserve, .check, .view { /*상단메뉴*/
             width: 52px;
             height: 14px;
-            margin:10px;
+            margin:30px;
             padding:10px;
             font-family: "Noto Sans KR", san-serif;
             font-size: 20px;
@@ -57,6 +61,8 @@
             float:left;
             border:0;
             color: #1e2b4d;
+            position:relative;
+            right:70px;
         }
         a {
             color: #1e2b4d;
@@ -93,19 +99,21 @@
 <body>
         <center>
             <header>      
-            <input class="loginbtn" type="button" value="LOGIN"><br>
+            <a class="loginA" href="login.jsp"><input class="loginbtn" type="button" value="LOGIN"></a><br>
             <img class="logo" src="img/raumi_main_logo.png">
-            </header>
+            <br>
             <br>
             <div class="menuline">
 			<div class="show"><a href="show.jsp">SHOW</a></div>
-    		<div class="reserve"><a href="reserve.jsp">&nbsp;&nbsp;&nbsp;RESERVE</a></div>
-    		<div class="check"><a href="check.jsp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHECK</a></div>
-    		<br>
+			<div class="view"><a href="show_360.jsp">VIEW</a></div>
+    		<div class="reserve"><a href="reserve.jsp">RESERVE</a></div>
+    		<div class="check"><a href="check_list.jsp">&nbsp;&nbsp;&nbsp;&nbsp;CHECK</a></div>
             </div>
+            </header>
+            <br>
             <br>
             <img class="img1" src="img/sakura.jpg">
-            <img class="img2" src="img/about_raumi.png">
+            <img class="img2" src="img/ABOUT-RAUMI.png">
         <footer>
             <p>
             (08821) 서울시 관악구 호암로 546(신림동) | 미림여자정보과학고등학교<br>

@@ -199,7 +199,7 @@
 		  color: #f53f55;
 		}
 		
-		#btn1, #btn2, #btn3 {
+		.btn {
 		    width: 500px;
 		    height:150px;
 		    text-align: center;
@@ -209,21 +209,8 @@
 		    font-size:80px;
 		    font-family: "Noto Sans KR", sans-serif;
 		    font-weight: bold;
+		    cursor:pointer;
 		}
-		#btn21,#btn22, #btn23, #btn24, #btn25  {
-		width:146px;
-		height:146px;
-		background-color: #fafafa;
-		color: #000;
-    	border: none;
-    	padding: 15px;
-    	text-align: center;
-    	text-decoration: none;
-    	display: inline-block;
-    	font-size: 30px;
-    	cursor: pointer;
-		}
-    	
 		
 		.dot {
 		  cursor: pointer;
@@ -387,60 +374,12 @@
 </style>
 </head>
 		<body>
-			<script>
-				var date;
-				var time;
-					
-				function day1() {
-					date = document.getElementById("btn21").value;
-					alert(date);
-				}
-				function day2() {
-					date = document.getElementById("btn22").value;
-					alert(date);
-				}
-				
-				function day3() {
-					date = document.getElementById("btn23").value;
-					alert(date);
-				}
-				
-				function day4() {
-					date = document.getElementById("btn24").value;
-					alert(date);
-				}
-				
-				function day5() {
-					date = document.getElementById("btn25").value;
-					alert(date);
-				}
-				/*date에 순서 들어감 switch case써서 insert할 때 sysdate에 날짜를 더할 예정.*/
-				
-				function time1() {
-					time=document.getElementById("btn1").value;
-					alert(time);
-				}
-				function time2() {
-					time=document.getElementById("btn2").value;
-					alert(time);
-				}
-				function time3() {
-					time=document.getElementById("btn3").value;
-					alert(time);
-				}
-				/*js에서 if로 id값을 판별하고 함수로 하는 최적화 해야할듯. 중복이 많다.*/
-				
-				
-				
-			
-			</script>
 		<center>
 		<header>
-			<a href="main.jsp"><img class="showlogo" src="img/raumi_logo.png"></a>
+			<a href="main.jsp"><img class="showlogo" src="img/raumi_main_logo.png"></a>
 			<div class="show"><a href="show.jsp">SHOW</a></div>
 		    <div class="reserve"><a href="reserve.jsp">&nbsp;&nbsp;&nbsp;RESERVE</a></div>
-		    <div class="check"><a href="check.jsp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHECK</a></div>
-<br>
+		    <div class="check"><a href="check_list.jsp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHECK</a></div>
 		</header>
 		<section></section>
 		<aside></aside>
@@ -449,22 +388,22 @@
 		<div class="explain">내가 찾던 전공실!<br>내가 필요한 전공실과 협업실을 예약!</div>
 		<br><br>
 		<!-- 날짜 선택 -->
-			<div class="text">1.예약할 날짜를 먼저 선택해주세요.</div>
+			<p class="choice">1.예약할 날짜를 먼저 선택해주세요.</p>
 			<br>
 			<div class="slideshow-container">
-			
+
 				<table class="date-container">
 				 <tr>
-				  <td><button id="btn21" onclick="day1();" value="first">오늘</button></td>
-				  <td><button id="btn22" onclick="day2();" value="second">+1</button></td>
-				  <td><button id="btn23" onclick="day3();" value="third">+1</button></td>
-				  <td><button id="btn24" onclick="day4();" value="fourth">+1</button></td>
-				  <td><button id="btn25" onclick="day5();" value="fifth">+1</button></td>
+				  <td><button class="btn2">오늘</button></td>
+				  <td><button class="btn2">+1</button></td>
+				  <td><button class="btn2">+1</button></td>
+				  <td><button class="btn2">+1</button></td>
+				  <td><button class="btn2">+1</button></td>
 				 </tr>
 				</table>
 			</div>
-		
-		<br><br>
+		<br>
+		<br>
 		<!-- 전공실 선택 -->
 		<p class="choice">2.예약할 전공실을 선택해주세요.</p>
 		<form>
@@ -473,9 +412,9 @@
 		      <p class="stair">2층</p>
 		    </div>
 		    <div id="section1b" class="elements">
-		    	<button class="spaceBtn"  id="leveled1" value="leveled1"><img class="spaceImg" src="img/수준별 1실/수준별1실.jpg"></button>
-		    	<button class="spaceBtn" id="leveled2" value="leveled2"><img class="spaceImg" src="img/수준별 2실/수준별2실.jpg"></button>
-		    	<button class="spaceBtn" id="career" value="career"><img class="spaceImg" src="img/진로체험 교실/진로체험 교실.jpg"></button>
+		    	<button class="spaceBtn"><img class="spaceImg" src="img/수준별 1실/수준별1실.jpg"></button>
+		    	<button class="spaceBtn"><img class="spaceImg" src="img/수준별 2실/수준별2실.jpg"></button>
+		    	<button class="spaceBtn"><img class="spaceImg" src="img/진로체험 교실/진로체험 교실.jpg"></button>
 		     </div>
 		    </div>
 		  <div>
@@ -483,11 +422,11 @@
 		    <p class="stair">3층</p>
 		  </div>
 		  <div class="elements">
-			  <button class="spaceBtn" id="soft1" value="soft1"><img class="spaceImg" src="img/뉴미디어 소프트웨어 1실/뉴미디어 소프트웨어 1실.jpg"></button>
-			  <button class="spaceBtn" id="soft2" value="soft2"><img class="spaceImg" src="img/뉴미디어 소프트웨어 2실/뉴미디어 소프트웨어 2실.jpg"></button>
-			  <button class="spaceBtn" id="solu1" value="solu1"><img class="spaceImg" src="img/뉴미디어 웹솔루션 1실/뉴미디어 웹솔루션 1실.jpg"></button>
-			  <button class="spaceBtn" id="solu2" value="solu2"><img class="spaceImg" src="img/뉴미디어 웹솔루션 2실/뉴미디어 웹솔루션 2실.jpg""></button>
-			  <button class="spaceBtn" id="solu3" value="solu3"><img class="spaceImg" src="img/뉴미디어 웹솔루션 3실/뉴미디어 웹솔루션 3실.jpg""></button>
+			  <button class="spaceBtn"><img class="spaceImg" src="img/뉴미디어 소프트웨어 1실/뉴미디어 소프트웨어 1실.jpg"></button>
+			  <button class="spaceBtn"><img class="spaceImg" src="img/뉴미디어 소프트웨어 2실/뉴미디어 소프트웨어 2실.jpg"></button>
+			  <button class="spaceBtn"><img class="spaceImg" src="img/뉴미디어 웹솔루션 1실/뉴미디어 웹솔루션 1실.jpg"></button>
+			  <button class="spaceBtn"><img class="spaceImg" src="img/뉴미디어 웹솔루션 2실/뉴미디어 웹솔루션 2실.jpg""></button>
+			  <button class="spaceBtn"><img class="spaceImg" src="img/뉴미디어 웹솔루션 3실/뉴미디어 웹솔루션 3실.jpg""></button>
 		  </div>
 		</div>
 		<div>
@@ -495,27 +434,28 @@
 		      <p class="stair">4층</p>
 		    </div>
 		    <div class="elements">
-		      <button class="spaceBtn" id="sang" value="sang"><img class="spaceImg" src="img/무한상상카페/무한상상카페.jpg"></button>
-			  <button class="spaceBtn" id="content" value="content"><img class="spaceImg" src="img/스마트문화앱콘텐츠제작 1실/스마트문화앱 콘텐츠제작 실습실1.jpg"></button>
-			  <button class="spaceBtn" id="gamer" value=""><img class="spaceImg" src="img/4층 끝/room.jpg"></button>
+		      <button class="spaceBtn"><img class="spaceImg" src="img/무한상상카페/무한상상카페.jpg"></button>
+			  <button class="spaceBtn"><img class="spaceImg" src="img/스마트문화앱콘텐츠제작 1실/스마트문화앱 콘텐츠제작 실습실1.jpg"></button>
+			  <button class="spaceBtn"><img class="spaceImg" src="img/4층 끝/room.jpg"></button>
 		    </div>
 		  </div>
 		</form>
+		<br><br>
 		<!-- 시간 선택 -->
-			<div class="text">3.예약할 시간을 선택해주세요.</div>
-			<br>
+		<p class="choice">3.예약할 시간을 선택해주세요.</p>
+		  <br>
             <div class="slideshow-container">
 
                     <div class="mySlides fade">
-                      <button id="btn1"  onclick="time1();" value="lunch">점심 시간</button>
+                      <button class="btn">점심 시간</button>
                     </div>
                     
                     <div class="mySlides fade">
-                      <button id="btn2"  onclick="time2();" value="dinner">석식 시간</button>
+                      <button class="btn">석식 시간</button>
                     </div>
                     
                     <div class="mySlides fade">
-                      <button id="btn3" onclick="time3();" value="after">방과후 시간</button>
+                      <button class="btn">방과후 시간</button>
                     </div>
                     
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -529,13 +469,103 @@
                       <span class="dot" onclick="currentSlide(2)"></span> 
                       <span class="dot" onclick="currentSlide(3)"></span> 
                     </div>
-<br><br><br><br><br>
-		
 		<br><br><br><br><br>
-		<a href="reserve.jsp"><input class="reserveBtn" type="button" value="예약 수정"></a>
-		<a href="check.jsp"><input class="checkBtn" type="button" value="예약 확인"></a>
-		</center>
-		</body>
+	    <!-- Trigger/Open The Modal -->
+	    <button id="myBtn">예약하기</button>
+	 
+	    <!-- The Modal -->
+	    <div id="myModal" class="modal">
+	 
+	      <!-- Modal content -->
+	      <div class="modal-content">
+	        <span class="close">&times;</span>                                                               
+	        <div class="modal-title">예약 내역</div>
+	        <br>
+	        <br>
+	        <br>
+	        <br>
+	        <br>
+	        <br>
+	        <div class="modal-title2">상세 예약 내역을 작성해주세요!</div>
+	        <br>
+	        <br>
+	        <br>
+	        <br>
+	        <br>
+	        <div class="reserve-name">예약자 성명</div>
+	        <div class="reserve-name2"><input type="text" name="name" size="10"></div>
+	        <br>
+	        <hr>
+	        <br>
+	        <div class="reserve-space">예약한 실습실</div>
+	        <br>
+	        <hr>
+	        <br>
+	        <div class="reserve-date">예약한 날짜</div>
+	        <br>
+	        <hr>
+	        <br>
+	        <div class="reserve-time">예약한 시간</div>
+	        <br>
+	        <hr>
+	        <br>
+	        <div class="reserve-person">예약된 인원</div>
+	        <div class="reserve-person2"><input type="text" name="person" size="5"></div>
+	        <button class="RESETbtn"><a class="a1" href="reserve.jsp">예약 수정</a></button>
+	        <button class="OKbtn"><a class="a2" href="check_list.jsp">예약 확인</a></button>
+	      </div>
+	    </div>
+
+		<script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+ 
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+ 
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];                                          
+ 
+        // When the user clicks on the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+ 
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+ 
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+		</script>
+		<script>
+		var elements = document.getElementsByTagName("div");
+		// 모든 영역 접기
+		for (var i = 0; i < elements.length; i++) {
+		  if (elements[i].className == "elements") {
+		    elements[i].style.display="none";
+		  } else if (elements[i].className == "label") {
+		    elements[i].onclick=switchDisplay;
+		  }
+		}
+		// 상태에 따라 접거나 펼치기
+		function switchDisplay() {
+		  var parent = this.parentNode;
+		  var target = parent.getElementsByTagName("div")[1];
+		  if (target.style.display == "none") {
+		    target.style.display="block";
+		  } else {
+		    target.style.display="none";
+		  }
+		  return false;
+		}
+		</script>
 		<script>
 		var slideIndex = 1;
 		showSlides(slideIndex);
@@ -563,6 +593,7 @@
 		  slides[slideIndex-1].style.display = "block";  
 		  dots[slideIndex-1].className += " active";
 		}
-
 		</script>
+		</center>
+		</body>
 		</html>
